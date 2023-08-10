@@ -1,0 +1,10 @@
+Time resolution is 1 ps
+                   0 a=0 b=0 s=x cout=x
+                   5 a=0 b=0 s=0 cout=0
+                  20 a=5 b=10 s=0 cout=0
+                  25 a=5 b=10 s=15 cout=0
+                  40 a=29 b=1007 s=15 cout=0
+                  45 a=29 b=1007 s=1036 cout=0
+                  60 a=2147483648 b=2147483648 s=1036 cout=0
+                  65 a=2147483648 b=2147483648 s=0 cout=1
+$finish called at time : 80 ns : File "C:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/my_adder_ip/my_adder_ip.srcs/sim_1/new/my_adder_tb.v" Line 41
