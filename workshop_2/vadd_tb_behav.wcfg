@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="vadd_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="vadd_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="57.200 ns"></ZoomStartTime>
+      <ZoomEndTime time="97.051 ns"></ZoomEndTime>
+      <Cursor1Time time="67.400 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="206"></NameColumnWidth>
+      <ValueColumnWidth column_width="253"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="group48" type="group">
+      <obj_property name="label">VADD</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/vadd_tb/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/start" type="logic">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/ena" type="logic">
+         <obj_property name="ElementShortName">ena</obj_property>
+         <obj_property name="ObjectShortName">ena</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/addra" type="array">
+         <obj_property name="ElementShortName">addra[9:0]</obj_property>
+         <obj_property name="ObjectShortName">addra[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/dia" type="array">
+         <obj_property name="ElementShortName">dia[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dia[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/enb" type="logic">
+         <obj_property name="ElementShortName">enb</obj_property>
+         <obj_property name="ObjectShortName">enb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/addrb" type="array">
+         <obj_property name="ElementShortName">addrb[9:0]</obj_property>
+         <obj_property name="ObjectShortName">addrb[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/dib" type="array">
+         <obj_property name="ElementShortName">dib[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dib[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/ens" type="logic">
+         <obj_property name="ElementShortName">ens</obj_property>
+         <obj_property name="ObjectShortName">ens</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/addrs" type="array">
+         <obj_property name="ElementShortName">addrs[9:0]</obj_property>
+         <obj_property name="ObjectShortName">addrs[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/dos" type="array">
+         <obj_property name="ElementShortName">dos[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dos[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/i" type="array">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/LENGTH" type="array">
+         <obj_property name="ElementShortName">LENGTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LENGTH[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group59" type="group">
+      <obj_property name="label">RAM_A</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_A/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_A/ena" type="logic">
+         <obj_property name="ElementShortName">ena</obj_property>
+         <obj_property name="ObjectShortName">ena</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_A/enb" type="logic">
+         <obj_property name="ElementShortName">enb</obj_property>
+         <obj_property name="ObjectShortName">enb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_A/wea" type="logic">
+         <obj_property name="ElementShortName">wea</obj_property>
+         <obj_property name="ObjectShortName">wea</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_A/addra" type="array">
+         <obj_property name="ElementShortName">addra[9:0]</obj_property>
+         <obj_property name="ObjectShortName">addra[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_A/addrb" type="array">
+         <obj_property name="ElementShortName">addrb[9:0]</obj_property>
+         <obj_property name="ObjectShortName">addrb[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_A/dia" type="array">
+         <obj_property name="ElementShortName">dia[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dia[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_A/doa" type="array">
+         <obj_property name="ElementShortName">doa[31:0]</obj_property>
+         <obj_property name="ObjectShortName">doa[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_A/dob" type="array">
+         <obj_property name="ElementShortName">dob[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dob[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_A/ram[2]" type="array">
+         <obj_property name="ElementShortName">[2][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group2121" type="group">
+      <obj_property name="label">RAM_C</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_C/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_C/ena" type="logic">
+         <obj_property name="ElementShortName">ena</obj_property>
+         <obj_property name="ObjectShortName">ena</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_C/enb" type="logic">
+         <obj_property name="ElementShortName">enb</obj_property>
+         <obj_property name="ObjectShortName">enb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_C/wea" type="logic">
+         <obj_property name="ElementShortName">wea</obj_property>
+         <obj_property name="ObjectShortName">wea</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_C/addra" type="array">
+         <obj_property name="ElementShortName">addra[9:0]</obj_property>
+         <obj_property name="ObjectShortName">addra[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_C/addrb" type="array">
+         <obj_property name="ElementShortName">addrb[9:0]</obj_property>
+         <obj_property name="ObjectShortName">addrb[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_C/dia" type="array">
+         <obj_property name="ElementShortName">dia[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dia[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_C/doa" type="array">
+         <obj_property name="ElementShortName">doa[31:0]</obj_property>
+         <obj_property name="ObjectShortName">doa[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_C/dob" type="array">
+         <obj_property name="ElementShortName">dob[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dob[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_C/ram[2]" type="array">
+         <obj_property name="ElementShortName">[2][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group3157" type="group">
+      <obj_property name="label">RAM_B</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_B/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_B/ena" type="logic">
+         <obj_property name="ElementShortName">ena</obj_property>
+         <obj_property name="ObjectShortName">ena</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_B/enb" type="logic">
+         <obj_property name="ElementShortName">enb</obj_property>
+         <obj_property name="ObjectShortName">enb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_B/wea" type="logic">
+         <obj_property name="ElementShortName">wea</obj_property>
+         <obj_property name="ObjectShortName">wea</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_B/addra" type="array">
+         <obj_property name="ElementShortName">addra[9:0]</obj_property>
+         <obj_property name="ObjectShortName">addra[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_B/addrb" type="array">
+         <obj_property name="ElementShortName">addrb[9:0]</obj_property>
+         <obj_property name="ObjectShortName">addrb[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_B/dia" type="array">
+         <obj_property name="ElementShortName">dia[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dia[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_B/doa" type="array">
+         <obj_property name="ElementShortName">doa[31:0]</obj_property>
+         <obj_property name="ObjectShortName">doa[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_B/dob" type="array">
+         <obj_property name="ElementShortName">dob[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dob[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/ram_sdp_B/ram[5]" type="array">
+         <obj_property name="ElementShortName">[5][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group3168" type="group">
+      <obj_property name="label">CTRL</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/vadd_tb/vadder/controller/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/controller/start" type="logic">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/controller/enb_A" type="logic">
+         <obj_property name="ElementShortName">enb_A</obj_property>
+         <obj_property name="ObjectShortName">enb_A</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/controller/enb_B" type="logic">
+         <obj_property name="ElementShortName">enb_B</obj_property>
+         <obj_property name="ObjectShortName">enb_B</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/controller/ena_C" type="logic">
+         <obj_property name="ElementShortName">ena_C</obj_property>
+         <obj_property name="ObjectShortName">ena_C</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/controller/wea_C" type="logic">
+         <obj_property name="ElementShortName">wea_C</obj_property>
+         <obj_property name="ObjectShortName">wea_C</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/controller/addrb" type="array">
+         <obj_property name="ElementShortName">addrb[9:0]</obj_property>
+         <obj_property name="ObjectShortName">addrb[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/controller/addrs" type="array">
+         <obj_property name="ElementShortName">addrs[9:0]</obj_property>
+         <obj_property name="ObjectShortName">addrs[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/controller/i" type="array">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/vadd_tb/vadder/controller/LENGTH" type="array">
+         <obj_property name="ElementShortName">LENGTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LENGTH[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/vadd_tb/vadder/summation" type="array">
+      <obj_property name="ElementShortName">summation[31:0]</obj_property>
+      <obj_property name="ObjectShortName">summation[31:0]</obj_property>
+   </wvobject>
+</wave_config>
