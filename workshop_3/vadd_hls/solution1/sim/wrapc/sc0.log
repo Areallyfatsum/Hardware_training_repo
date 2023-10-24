@@ -1,0 +1,6 @@
+   Build using "C:/Xilinx/Vitis_HLS/2023.1/tps/win64/msys64/mingw64/bin/g++"
+   Compiling vadd.cpp_pre.cpp.tb.cpp
+   Compiling vadd_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_vadd.cpp
+   Compiling apatb_vadd_ir.ll
+   Generating cosim.tv.exe

@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "vadd",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "vadd"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_3/vadd_hls/solution1/csynth.tcl",
+    "sourceLine": 17,
+    "success": true
+  }
+]

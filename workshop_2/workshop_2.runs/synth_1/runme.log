@@ -1,0 +1,323 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 472.062 ; gain = 159.676
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 545.809 ; gain = 72.652
+Command: synth_design -top design_1_wrapper -part xck26-sfvc784-2LV-c
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25628
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1898.945 ; gain = 340.492
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_a_0' [C:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.runs/synth_1/.Xil/Vivado-35556-Mus/realtime/design_1_axi_bram_ctrl_a_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_a_0' (0#1) [C:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.runs/synth_1/.Xil/Vivado-35556-Mus/realtime/design_1_axi_bram_ctrl_a_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'bram_rst_a' of module 'design_1_axi_bram_ctrl_a_0' is unconnected for instance 'axi_bram_ctrl_a' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:183]
+WARNING: [Synth 8-7071] port 'bram_clk_a' of module 'design_1_axi_bram_ctrl_a_0' is unconnected for instance 'axi_bram_ctrl_a' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:183]
+WARNING: [Synth 8-7071] port 'bram_we_a' of module 'design_1_axi_bram_ctrl_a_0' is unconnected for instance 'axi_bram_ctrl_a' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:183]
+WARNING: [Synth 8-7023] instance 'axi_bram_ctrl_a' of module 'design_1_axi_bram_ctrl_a_0' has 40 connections declared, but only 37 given [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:183]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_b_0' [C:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.runs/synth_1/.Xil/Vivado-35556-Mus/realtime/design_1_axi_bram_ctrl_b_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_b_0' (0#1) [C:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.runs/synth_1/.Xil/Vivado-35556-Mus/realtime/design_1_axi_bram_ctrl_b_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'bram_rst_a' of module 'design_1_axi_bram_ctrl_b_0' is unconnected for instance 'axi_bram_ctrl_b' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:221]
+WARNING: [Synth 8-7071] port 'bram_clk_a' of module 'design_1_axi_bram_ctrl_b_0' is unconnected for instance 'axi_bram_ctrl_b' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:221]
+WARNING: [Synth 8-7071] port 'bram_we_a' of module 'design_1_axi_bram_ctrl_b_0' is unconnected for instance 'axi_bram_ctrl_b' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:221]
+WARNING: [Synth 8-7023] instance 'axi_bram_ctrl_b' of module 'design_1_axi_bram_ctrl_b_0' has 40 connections declared, but only 37 given [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:221]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_s_0' [C:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.runs/synth_1/.Xil/Vivado-35556-Mus/realtime/design_1_axi_bram_ctrl_s_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_s_0' (0#1) [C:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.runs/synth_1/.Xil/Vivado-35556-Mus/realtime/design_1_axi_bram_ctrl_s_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'bram_rst_a' of module 'design_1_axi_bram_ctrl_s_0' is unconnected for instance 'axi_bram_ctrl_s' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:259]
+WARNING: [Synth 8-7071] port 'bram_clk_a' of module 'design_1_axi_bram_ctrl_s_0' is unconnected for instance 'axi_bram_ctrl_s' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:259]
+WARNING: [Synth 8-7071] port 'bram_we_a' of module 'design_1_axi_bram_ctrl_s_0' is unconnected for instance 'axi_bram_ctrl_s' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:259]
+WARNING: [Synth 8-7071] port 'bram_wrdata_a' of module 'design_1_axi_bram_ctrl_s_0' is unconnected for instance 'axi_bram_ctrl_s' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:259]
+WARNING: [Synth 8-7023] instance 'axi_bram_ctrl_s' of module 'design_1_axi_bram_ctrl_s_0' has 40 connections declared, but only 36 given [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:259]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [C:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.runs/synth_1/.Xil/Vivado-35556-Mus/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (0#1) [C:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.runs/synth_1/.Xil/Vivado-35556-Mus/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_0' [C:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.runs/synth_1/.Xil/Vivado-35556-Mus/realtime/design_1_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_0' (0#1) [C:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.runs/synth_1/.Xil/Vivado-35556-Mus/realtime/design_1_axi_smc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awqos' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:317]
+WARNING: [Synth 8-7071] port 'M00_AXI_awuser' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:317]
+WARNING: [Synth 8-7071] port 'M00_AXI_arqos' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:317]
+WARNING: [Synth 8-7071] port 'M00_AXI_aruser' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:317]
+WARNING: [Synth 8-7071] port 'M01_AXI_awqos' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:317]
+WARNING: [Synth 8-7071] port 'M01_AXI_awuser' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:317]
+WARNING: [Synth 8-7071] port 'M01_AXI_arqos' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:317]
+WARNING: [Synth 8-7071] port 'M01_AXI_aruser' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:317]
+WARNING: [Synth 8-7071] port 'M02_AXI_awqos' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:317]
+WARNING: [Synth 8-7071] port 'M02_AXI_awuser' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:317]
+WARNING: [Synth 8-7071] port 'M02_AXI_arqos' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:317]
+WARNING: [Synth 8-7071] port 'M02_AXI_aruser' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:317]
+WARNING: [Synth 8-7071] port 'M03_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:317]
+WARNING: [Synth 8-7071] port 'M03_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:317]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'design_1_axi_smc_0' has 165 connections declared, but only 151 given [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:317]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps8_0_99M_0' [C:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.runs/synth_1/.Xil/Vivado-35556-Mus/realtime/design_1_rst_ps8_0_99M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps8_0_99M_0' (0#1) [C:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.runs/synth_1/.Xil/Vivado-35556-Mus/realtime/design_1_rst_ps8_0_99M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:469]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:469]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:469]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:469]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_99M' of module 'design_1_rst_ps8_0_99M_0' has 10 connections declared, but only 6 given [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:469]
+INFO: [Synth 8-6157] synthesizing module 'design_1_vadd_0_0' [C:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.runs/synth_1/.Xil/Vivado-35556-Mus/realtime/design_1_vadd_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_vadd_0_0' (0#1) [C:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.runs/synth_1/.Xil/Vivado-35556-Mus/realtime/design_1_vadd_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_0' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (0#1) [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_0' (0#1) [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_1_0' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_1_0' (0#1) [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_2_0' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/ip/design_1_xlslice_2_0/synth/design_1_xlslice_2_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_2_0' (0#1) [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/ip/design_1_xlslice_2_0/synth/design_1_xlslice_2_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [C:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.runs/synth_1/.Xil/Vivado-35556-Mus/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (0#1) [C:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.runs/synth_1/.Xil/Vivado-35556-Mus/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'pl_clk1' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:497]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'design_1_zynq_ultra_ps_e_0_0' has 44 connections declared, but only 43 given [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:497]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+WARNING: [Synth 8-7129] Port Din[12] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1995.805 ; gain = 437.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2013.699 ; gain = 455.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2013.699 ; gain = 455.246
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2013.699 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_a_0/design_1_axi_bram_ctrl_a_0/design_1_axi_bram_ctrl_a_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_a'
+Finished Parsing XDC File [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_a_0/design_1_axi_bram_ctrl_a_0/design_1_axi_bram_ctrl_a_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_a'
+Parsing XDC File [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_b_0/design_1_axi_bram_ctrl_b_0/design_1_axi_bram_ctrl_a_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_b'
+Finished Parsing XDC File [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_b_0/design_1_axi_bram_ctrl_b_0/design_1_axi_bram_ctrl_a_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_b'
+Parsing XDC File [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_s_0/design_1_axi_bram_ctrl_s_0/design_1_axi_bram_ctrl_a_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_s'
+Finished Parsing XDC File [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_s_0/design_1_axi_bram_ctrl_s_0/design_1_axi_bram_ctrl_a_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_s'
+Parsing XDC File [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Finished Parsing XDC File [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Parsing XDC File [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Parsing XDC File [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0/design_1_axi_smc_0_in_context.xdc] for cell 'design_1_i/axi_smc'
+Finished Parsing XDC File [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0/design_1_axi_smc_0_in_context.xdc] for cell 'design_1_i/axi_smc'
+Parsing XDC File [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0_in_context.xdc] for cell 'design_1_i/rst_ps8_0_99M'
+Finished Parsing XDC File [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0_in_context.xdc] for cell 'design_1_i/rst_ps8_0_99M'
+Parsing XDC File [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/ip/design_1_vadd_0_0/design_1_vadd_0_0/design_1_vadd_0_0_in_context.xdc] for cell 'design_1_i/vadd_0'
+Finished Parsing XDC File [c:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.gen/sources_1/bd/design_1/ip/design_1_vadd_0_0/design_1_vadd_0_0/design_1_vadd_0_0_in_context.xdc] for cell 'design_1_i/vadd_0'
+Parsing XDC File [C:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2044.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 2044.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 2044.137 ; gain = 485.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 2044.137 ; gain = 485.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_bram_ctrl_a. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_bram_ctrl_b. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_bram_ctrl_s. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps8_0_99M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/vadd_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlslice_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlslice_2. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 2044.137 ; gain = 485.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 2044.137 ; gain = 485.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port Din[12] in module design_1_xlslice_2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module design_1_xlslice_2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module design_1_xlslice_2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[12] in module design_1_xlslice_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module design_1_xlslice_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module design_1_xlslice_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[12] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module design_1_xlslice_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 2044.137 ; gain = 485.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 2546.133 ; gain = 987.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 2546.133 ; gain = 987.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 2556.512 ; gain = 998.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:41 . Memory (MB): peak = 2572.281 ; gain = 1013.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:41 . Memory (MB): peak = 2572.281 ; gain = 1013.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:41 . Memory (MB): peak = 2572.281 ; gain = 1013.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:41 . Memory (MB): peak = 2572.281 ; gain = 1013.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:41 . Memory (MB): peak = 2572.281 ; gain = 1013.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:41 . Memory (MB): peak = 2572.281 ; gain = 1013.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------+----------+
+|      |BlackBox name                |Instances |
++------+-----------------------------+----------+
+|1     |design_1_axi_bram_ctrl_a_0   |         1|
+|2     |design_1_axi_bram_ctrl_b_0   |         1|
+|3     |design_1_axi_bram_ctrl_s_0   |         1|
+|4     |design_1_axi_gpio_0_0        |         1|
+|5     |design_1_axi_smc_0           |         1|
+|6     |design_1_rst_ps8_0_99M_0     |         1|
+|7     |design_1_vadd_0_0            |         1|
+|8     |design_1_zynq_ultra_ps_e_0_0 |         1|
++------+-----------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------+------+
+|      |Cell                       |Count |
++------+---------------------------+------+
+|1     |design_1_axi_bram_ctrl_a   |     1|
+|2     |design_1_axi_bram_ctrl_b   |     1|
+|3     |design_1_axi_bram_ctrl_s   |     1|
+|4     |design_1_axi_gpio_0        |     1|
+|5     |design_1_axi_smc           |     1|
+|6     |design_1_rst_ps8_0_99M     |     1|
+|7     |design_1_vadd_0            |     1|
+|8     |design_1_zynq_ultra_ps_e_0 |     1|
++------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:41 . Memory (MB): peak = 2572.281 ; gain = 1013.828
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:34 . Memory (MB): peak = 2572.281 ; gain = 983.391
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:42 . Memory (MB): peak = 2572.281 ; gain = 1013.828
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2572.281 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2617.789 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 3123d0fd
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 48 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:51 . Memory (MB): peak = 2622.785 ; gain = 2076.977
+INFO: [Common 17-1381] The checkpoint 'C:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_2/workshop_2.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 21 14:34:26 2023...

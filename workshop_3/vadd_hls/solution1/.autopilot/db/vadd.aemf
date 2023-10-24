@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1692597069531">
+  <ports id="1" name="gmem" type="PortType" coreId="1702129263" bitwidth="32" direction="DirInOut" iftype="IfTypeFifo">
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="a" type="PortType" originalName="a" coreId="130686288" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="b" type="PortType" originalName="b" coreId="110162864" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="s" type="PortType" originalName="s" coreId="0" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="60" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="62" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="64" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="67" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="72" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="74" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="77" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="79" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="82" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="83" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="84" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="87" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="92" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="93" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="94" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="95" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="96" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="99" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="102" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="103" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="104" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="105" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="106" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="107" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="108" source_obj="//@ports.0" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="109" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="112" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="116" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="117" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="118" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="119" source_obj="//@blocks.2/@node_objs.5" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="120" source_obj="//@ports.0" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="121" source_obj="//@blocks.2/@node_objs.6" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="123" source_obj="//@blocks.2/@node_objs.7" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="126" source_obj="//@blocks.2/@node_objs.7" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="127" source_obj="//@blocks.2/@node_objs.9" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="128" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="131" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.2/@node_objs.11"/>
+  <edges id="132" source_obj="//@blocks.2/@node_objs.10" sink_obj="//@blocks.2/@node_objs.11"/>
+  <edges id="135" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="136" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="137" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="140" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="325" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="326" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
+  <edges id="327" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="328" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <edges id="329" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.8" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="330" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.8" sink_obj="//@blocks.2/@node_objs.11"/>
+  <edges id="331" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="332" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="333" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="334" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.2/@node_objs.11"/>
+  <edges id="335" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="336" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.2/@node_objs.11"/>
+  <edges id="337" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="338" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="-83" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@ports.0"/>
+  <edges id="-108" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@ports.0"/>
+  <edges id="-120" source_obj="//@blocks.2/@node_objs.7" sink_obj="//@ports.0"/>
+  <blocks id="29" name="entry" type="BlockType">
+    <controlOutputObjs>for.inc</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="i" originalName="i" coreId="1953853279" bitwidth="7" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="s_read" lineNumber="4" fileName="vadd_hls/vadd.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="122" contextFuncName="vadd" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="4" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>s</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="b_read" lineNumber="4" fileName="vadd_hls/vadd.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="122" contextFuncName="vadd" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="4" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>b</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="a_read" lineNumber="4" fileName="vadd_hls/vadd.cpp" fileDirectory="../." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="122" contextFuncName="vadd" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="4" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>a</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="trunc_ln" lineNumber="10" fileName="vadd_hls/vadd.cpp" fileDirectory="../." rtlName="trunc_ln_reg_260" coreId="537534565" contextFuncName="vadd" bitwidth="62" opcode="partselect" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="10" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="sext_ln10" lineNumber="10" fileName="vadd_hls/vadd.cpp" fileDirectory="../." rtlName="sext_ln10_fu_189_p1" coreId="1818195059" contextFuncName="vadd" bitwidth="63" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="10" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="trunc_ln10_1" lineNumber="10" fileName="vadd_hls/vadd.cpp" fileDirectory="../." rtlName="trunc_ln10_1_reg_265" coreId="1819697012" contextFuncName="vadd" bitwidth="62" opcode="partselect" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="10" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="sext_ln10_1" lineNumber="10" fileName="vadd_hls/vadd.cpp" fileDirectory="../." rtlName="sext_ln10_1_fu_192_p1" coreId="110168816" contextFuncName="vadd" bitwidth="63" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="10" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="trunc_ln10_2" lineNumber="10" fileName="vadd_hls/vadd.cpp" fileDirectory="../." rtlName="trunc_ln10_2_fu_164_p4" coreId="113538120" contextFuncName="vadd" bitwidth="62" opcode="partselect" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="10" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="sext_ln10_2" lineNumber="10" fileName="vadd_hls/vadd.cpp" fileDirectory="../." rtlName="sext_ln10_2_fu_174_p1" coreId="538970734" contextFuncName="vadd" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="10" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="gmem_addr" lineNumber="10" fileName="vadd_hls/vadd.cpp" fileDirectory="../." coreId="1918858355" contextFuncName="vadd" bitwidth="32" opcode="getelementptr" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="10" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>gmem</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>writereq</dataOutputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>writeresp</dataOutputObjs>
+      <dataOutputObjs>gmem</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="empty" lineNumber="10" fileName="vadd_hls/vadd.cpp" fileDirectory="../." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="121" contextFuncName="vadd" bitwidth="1" opcode="writereq" nodeLabel="1.0" m_display="0" m_delay="7.3" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="10" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="i_write_ln10" lineNumber="10" fileName="vadd_hls/vadd.cpp" fileDirectory="../." coreId="1768386412" contextFuncName="vadd" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="10" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="br_ln10" lineNumber="10" fileName="vadd_hls/vadd.cpp" fileDirectory="../." coreId="0" contextFuncName="vadd" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="10" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <controlInputObjs>for.inc</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="vadd_hls/vadd.cpp">
+      <validLinenumbers>4</validLinenumbers>
+      <validLinenumbers>10</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="35" name="for.inc" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlInputObjs>for.inc.split</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.end</controlOutputObjs>
+    <controlOutputObjs>for.inc.split</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="i_1" lineNumber="10" originalName="i" fileName="vadd_hls/vadd.cpp" fileDirectory="../." coreId="4294967292" contextFuncName="vadd" bitwidth="7" opcode="load" nodeLabel="2.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="10" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="zext_ln10" lineNumber="10" fileName="vadd_hls/vadd.cpp" fileDirectory="../." rtlName="zext_ln10_fu_198_p1" coreId="0" contextFuncName="vadd" bitwidth="63" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="10" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="icmp_ln10" lineNumber="10" fileName="vadd_hls/vadd.cpp" fileDirectory="../." rtlName="icmp_ln10_fu_202_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="vadd" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="0.77" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="10" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="add_ln10" lineNumber="10" fileName="vadd_hls/vadd.cpp" fileDirectory="../." rtlName="add_ln10_fu_208_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="vadd" bitwidth="7" opcode="add" nodeLabel="2.0" m_display="0" m_delay="0.77" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="10" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="br_ln10" lineNumber="10" fileName="vadd_hls/vadd.cpp" fileDirectory="../." coreId="131225840" contextFuncName="vadd" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="10" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>for.inc.split</controlInputObjs>
+      <controlInputObjs>for.end</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="vadd_hls/vadd.cpp">
+      <validLinenumbers>10</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="52" name="for.inc.split" type="BlockType">
+    <controlInputObjs>for.inc</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.inc</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="add_ln12" lineNumber="12" fileName="vadd_hls/vadd.cpp" fileDirectory="../." rtlName="add_ln12_fu_214_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="vadd" bitwidth="63" opcode="add" nodeLabel="2.0" m_display="0" m_delay="1.08" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="12" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="sext_ln12" lineNumber="12" fileName="vadd_hls/vadd.cpp" fileDirectory="../." rtlName="sext_ln12_fu_219_p1" coreId="104" contextFuncName="vadd" bitwidth="64" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="12" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="gmem_addr_1" lineNumber="12" fileName="vadd_hls/vadd.cpp" fileDirectory="../." coreId="0" contextFuncName="vadd" bitwidth="32" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="12" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>gmem</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>readreq</dataOutputObjs>
+      <dataOutputObjs>read</dataOutputObjs>
+      <dataOutputObjs>gmem</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="gmem_load_req" lineNumber="12" fileName="vadd_hls/vadd.cpp" fileDirectory="../." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="121" contextFuncName="vadd" bitwidth="1" opcode="readreq" nodeLabel="3.0" nodeLatency="7" m_display="0" m_delay="7.3" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="12" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="gmem_addr_1_read" lineNumber="12" fileName="vadd_hls/vadd.cpp" fileDirectory="../." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="121" contextFuncName="vadd" bitwidth="32" opcode="read" nodeLabel="11.0" m_display="0" m_delay="7.3" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="12" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="add_ln12_1" lineNumber="12" fileName="vadd_hls/vadd.cpp" fileDirectory="../." rtlName="add_ln12_1_fu_229_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="vadd" bitwidth="63" opcode="add" nodeLabel="2.0" m_display="0" m_delay="1.08" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="12" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="sext_ln12_1" lineNumber="12" fileName="vadd_hls/vadd.cpp" fileDirectory="../." rtlName="sext_ln12_1_fu_234_p1" coreId="0" contextFuncName="vadd" bitwidth="64" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="12" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="gmem_addr_2" lineNumber="12" fileName="vadd_hls/vadd.cpp" fileDirectory="../." coreId="131229424" contextFuncName="vadd" bitwidth="32" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="12" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>gmem</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>readreq</dataOutputObjs>
+      <dataOutputObjs>read</dataOutputObjs>
+      <dataOutputObjs>gmem</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="gmem_load_1_req" lineNumber="12" fileName="vadd_hls/vadd.cpp" fileDirectory="../." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="121" contextFuncName="vadd" bitwidth="1" opcode="readreq" nodeLabel="4.0" nodeLatency="7" m_display="0" m_delay="7.3" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="12" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="gmem_addr_2_read" lineNumber="12" fileName="vadd_hls/vadd.cpp" fileDirectory="../." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="121" contextFuncName="vadd" bitwidth="32" opcode="read" nodeLabel="12.0" m_display="0" m_delay="7.3" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="12" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="add_ln12_2" lineNumber="12" fileName="vadd_hls/vadd.cpp" fileDirectory="../." rtlName="add_ln12_2_fu_249_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="vadd" bitwidth="32" opcode="add" nodeLabel="13.0" m_display="0" m_delay="1.01" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="12" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="gmem_addr_write_ln12" lineNumber="12" fileName="vadd_hls/vadd.cpp" fileDirectory="../." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="121" contextFuncName="vadd" opcode="write" nodeLabel="14.0" m_display="0" m_delay="7.3" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="12" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="i_write_ln10" lineNumber="10" fileName="vadd_hls/vadd.cpp" fileDirectory="../." coreId="4294967294" contextFuncName="vadd" opcode="store" nodeLabel="2.0" m_display="0" m_delay="0.42" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="10" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="br_ln10" lineNumber="10" fileName="vadd_hls/vadd.cpp" fileDirectory="../." coreId="134726192" contextFuncName="vadd" opcode="br" nodeLabel="14.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="10" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <controlInputObjs>for.inc</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="vadd_hls/vadd.cpp">
+      <validLinenumbers>12</validLinenumbers>
+      <validLinenumbers>10</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="55" name="for.end" type="BlockType">
+    <controlInputObjs>for.inc</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="empty_17" lineNumber="14" fileName="vadd_hls/vadd.cpp" fileDirectory="../." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="121" contextFuncName="vadd" bitwidth="1" opcode="writeresp" nodeLabel="15.0" nodeLatency="4" m_display="0" m_delay="7.3" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="14" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="_ln14" lineNumber="14" fileName="vadd_hls/vadd.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="vadd" opcode="ret" nodeLabel="19.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vadd_hls/vadd.cpp" linenumber="14" fileDirectory="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3" functionName="vadd"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="vadd_hls/vadd.cpp">
+      <validLinenumbers>14</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <ScheduleInfo time="19"/>
+  <regnodes realName="gmem_addr_1_reg_289">
+    <nodeIds>40</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln_reg_260">
+    <nodeIds>19</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_253">
+    <nodeIds>5</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_addr_2_reg_295">
+    <nodeIds>45</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln10_1_reg_265">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln12_2_reg_311">
+    <nodeIds>48</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_addr_2_read_reg_306">
+    <nodeIds>47</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_addr_reg_270">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln10_1_reg_281">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_addr_1_read_reg_301">
+    <nodeIds>42</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln10_reg_276">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <expressionNodes realName="add_ln12_2_fu_249">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln12_1_fu_234">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln12_fu_219">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem_addr_2_fu_238">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_82">
+    <nodeIds>5</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln10_fu_198">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln10_2_fu_174">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln10_fu_202">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln10_2_fu_164">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem_addr_1_fu_223">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem_addr_fu_178">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln12_fu_214">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln10_1_fu_154">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln12_1_fu_229">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln10_fu_208">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln10_1_fu_192">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln10_fu_189">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln_fu_144">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="b_read_read_fu_92">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_readreq_fu_111">
+    <nodeIds>41</nodeIds>
+  </ioNodes>
+  <ioNodes realName="s_read_read_fu_86">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln12_write_fu_135">
+    <nodeIds>49</nodeIds>
+  </ioNodes>
+  <ioNodes realName="a_read_read_fu_98">
+    <nodeIds>18</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln10_store_fu_184">
+    <nodeIds>27</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_writeresp_fu_104">
+    <nodeIds>26</nodeIds>
+    <nodeIds>53</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_readreq_fu_118">
+    <nodeIds>46</nodeIds>
+  </ioNodes>
+  <ioNodes realName="gmem_addr_1_read_read_fu_125">
+    <nodeIds>42</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln10_store_fu_244">
+    <nodeIds>50</nodeIds>
+  </ioNodes>
+  <ioNodes realName="gmem_addr_2_read_read_fu_130">
+    <nodeIds>47</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_1_load_fu_195">
+    <nodeIds>30</nodeIds>
+  </ioNodes>
+  <ioPorts name="a">
+    <contents name="read">
+      <nodeIds>18</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="b">
+    <contents name="read">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="gmem">
+    <contents name="read">
+      <nodeIds>42</nodeIds>
+      <nodeIds>47</nodeIds>
+    </contents>
+    <contents name="readreq">
+      <nodeIds>41</nodeIds>
+      <nodeIds>46</nodeIds>
+    </contents>
+    <contents name="write">
+      <nodeIds>49</nodeIds>
+    </contents>
+    <contents name="writereq">
+      <nodeIds>26</nodeIds>
+    </contents>
+    <contents name="writeresp">
+      <nodeIds>53</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="s">
+    <contents name="read">
+      <nodeIds>16</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="41" stage="8" latency="8"/>
+    </states>
+    <states id="5">
+      <operations id="41" stage="7" latency="8"/>
+      <operations id="46" stage="8" latency="8"/>
+    </states>
+    <states id="6">
+      <operations id="41" stage="6" latency="8"/>
+      <operations id="46" stage="7" latency="8"/>
+    </states>
+    <states id="7">
+      <operations id="41" stage="5" latency="8"/>
+      <operations id="46" stage="6" latency="8"/>
+    </states>
+    <states id="8">
+      <operations id="41" stage="4" latency="8"/>
+      <operations id="46" stage="5" latency="8"/>
+    </states>
+    <states id="9">
+      <operations id="41" stage="3" latency="8"/>
+      <operations id="46" stage="4" latency="8"/>
+    </states>
+    <states id="10">
+      <operations id="41" stage="2" latency="8"/>
+      <operations id="46" stage="3" latency="8"/>
+    </states>
+    <states id="11">
+      <operations id="41" stage="1" latency="8"/>
+      <operations id="46" stage="2" latency="8"/>
+    </states>
+    <states id="12">
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="8"/>
+    </states>
+    <states id="13">
+      <operations id="47" stage="1" latency="1"/>
+    </states>
+    <states id="14">
+      <operations id="48" stage="1" latency="1"/>
+    </states>
+    <states id="15">
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+    </states>
+    <states id="16">
+      <operations id="53" stage="5" latency="5"/>
+    </states>
+    <states id="17">
+      <operations id="53" stage="4" latency="5"/>
+    </states>
+    <states id="18">
+      <operations id="53" stage="3" latency="5"/>
+    </states>
+    <states id="19">
+      <operations id="53" stage="2" latency="5"/>
+    </states>
+    <states id="20">
+      <operations id="53" stage="1" latency="5"/>
+      <operations id="54" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="18" outState="19">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="19" outState="20">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="vadd" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1307" mMaxLatency="1307">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="1">
+      <basicBlocks>29</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_10_1" mII="-1" mDepth="-1" mMinTripCount="100" mMaxTripCount="100" mMinLatency="1300" mMaxLatency="1300" mType="1">
+      <basicBlocks>35</basicBlocks>
+      <basicBlocks>52</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="4" mMaxLatency="4">
+      <basicBlocks>55</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

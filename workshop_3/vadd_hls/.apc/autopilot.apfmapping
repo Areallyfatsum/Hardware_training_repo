@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="vadd.h" path="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3\vadd_hls\vadd.h"/>
+    <originFiles name="vadd.cpp" path="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3\vadd_hls\vadd.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="vadd_tb.cpp" path="C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3\vadd_hls\vadd_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

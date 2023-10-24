@@ -1,0 +1,13 @@
+---
+MainSourceFile:  'C:/Users/musta/OneDrive/Documents/GitHub/Hardware_training_repo/workshop_3/vadd_hls/solution1/.autopilot/db/vadd.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_10_1:  '
+    FileOffset:      10
+    FilePath:        'C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3\vadd_hls\vadd.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3\vadd_hls\solution1\.autopilot\db\vadd.pp.0.cpp'
+        Offset:          10257
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_10_1: '
+...

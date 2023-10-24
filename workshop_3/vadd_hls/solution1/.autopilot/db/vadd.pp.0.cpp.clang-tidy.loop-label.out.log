@@ -1,0 +1,5 @@
+C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3\vadd_hls\solution1\.autopilot\db\vadd.pp.0.cpp:177:2: warning: Added loop label VITIS_LOOP_10_1:   [xilinx-label-all-loops]
+ for (int i=0; i<100; i++) {
+ ^~~
+ VITIS_LOOP_10_1: 
+C:\Users\musta\OneDrive\Documents\GitHub\Hardware_training_repo\workshop_3\vadd_hls\solution1\.autopilot\db\vadd.pp.0.cpp:177:2: note: FIX-IT applied suggested code changes
